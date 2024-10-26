@@ -66,7 +66,7 @@ button:hover{
     flex-direction: column;
 }
 
-@media (width: 1024px) {
+@media (max-width: 1024px) {
     .container{
         border: none;
         padding: 0;
