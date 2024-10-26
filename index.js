@@ -12,11 +12,3 @@ function nao(elemento){
 function randomNumber(min, max){
     return (Math.random() * (max - min) + (min)) + '%';
 }
-
-function isMobile() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-}
-
-if (isMobile()) {
-    document.getElementById('mobile-message').style.display = 'block';
-}

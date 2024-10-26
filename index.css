@@ -26,7 +26,6 @@ h1{
 }
 
 .container{
-    background-color: var(--background);
     border: 1px solid var(--primary);
     border-radius: 4px;
     padding: 48px;
@@ -67,15 +66,13 @@ button:hover{
     flex-direction: column;
 }
 
-#mobile-message {
-    display: none;
-    background-color: #ffdddd;
-    color: #d8000c;
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #d8000c;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+@media (max-width: 1024px) {
+    .container{
+        border: none;
+        padding: 0;
+    }
+
+    img{
+        width: 50vw;
+    }
 }
